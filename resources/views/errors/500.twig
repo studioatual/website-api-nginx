@@ -1,0 +1,8 @@
+{% extends 'errors/layout.twig' %}
+{% block content %}
+<h1>{{ title }}</h1>
+<p><b>Message:</b> {{ message }}</p>
+<p><b>File:</b> {{ file }}</p>
+<p><b>Line:</b> {{ line }}</p>
+<p><b>Trace:</b> {{ trace }}</p>
+{% endblock %}

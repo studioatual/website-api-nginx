@@ -1,0 +1,31 @@
+<?php
+
+use $useClassName;
+use Illuminate\Database\Schema\Blueprint;
+
+class $className extends $baseClassName
+{
+    public function up()
+    {
+        $this->schema->create('table_name', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+            $table->engine = 'InnoDB';
+        });
+        /*
+        $this->schema->table('', function (Blueprint $table) {
+
+        });
+        */
+    }
+
+    public function down()
+    {
+        $this->schema->drop('table_name');
+        /*
+        $this->schema->table('', function (Blueprint $table) {
+
+        });
+        */
+    }
+}

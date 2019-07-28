@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="pt-br" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <meta name="keywords" content="{{ keywords }}" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: #F7F9FB;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #576271;
+    }
+
+    section.authrecover {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      justify-items: center;
+      overflow: hidden;
+    }
+
+    div.authrecover-container {
+      width: 300px;
+      padding: 25px;
+      background: #ffffff;
+      border-radius: 7px;
+      border: 1px solid #dddddd;
+      box-shadow: 1px 3px 6px rgba(0,0,0,0.1);
+    }
+
+    a.authrecover-container-logotipo {
+      display: block;
+      margin-bottom: 15px;
+      line-height: normal;
+      text-align: center;
+    }
+
+    a.auth-recover-container-logotipo > img {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+
+    form.authrecover-container-form {
+      display: block;
+    }
+
+    h2.authrecover-container-form-title {
+      margin-bottom: 10px;
+      font-family: "Oswald", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: #333333;
+      text-align: center;
+    }
+
+    p.authrecover-container-form-text {
+      margin-bottom: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      color: #757575;
+      text-align: center;
+    }
+
+    hr.authrecover-container-form-line {
+      margin-bottom: 15px;
+      background: #efefef;
+      height: 3px;
+      border: 0;
+    }
+
+    form.authrecover-container-form > div.alert {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+
+    form.authrecover-container-form > div.alert-danger {
+      color: rgba(200,0,0,1);
+      background: rgba(200,0,0,0.1);
+      border: 1px solid rgba(200,0,0,0.2);
+    }
+
+    form.authrecover-container-form > div.alert-success {
+      color: rgba(0,150,0,1);
+      background: rgba(0,150,0,0.1);
+      border: 1px solid rgba(0,150,0,0.2);
+    }
+
+    div.authrecover-container-form-group {
+      margin-bottom: 12px;
+    }
+
+    div.authrecover-container-form-group:last-child {
+      margin-bottom: 0;
+    }
+
+    div.authrecover-container-form-group > .help-block {
+      display: block;
+      margin-top: 5px;
+      font-size: 12px;
+      color: #ff0000;
+    }
+
+    div.authrecover-container-form-group > label {
+      display: block;
+      font-weight: 600;
+      margin-left: 4px;
+      margin-bottom: 4px;
+    }
+
+    div.authrecover-container-form-group > input[type=password] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #2885ce;
+      line-height: normal;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      outline: none;
+    }
+
+    div.has-error > label {
+      color: #ff0000;
+    }
+
+    div.has-error > input[type=password] {
+      border-color: #ff0000;
+      background: rgba(255,0,0,0.03) !important;
+    }
+
+    div.authrecover-container-form-group > button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #ffffff;
+      background: #1C7CD5;
+      border: 0;
+      border-radius: 5px;
+      outline: 0;
+      cursor: pointer;
+    }
+
+    div.authrecover-container-form-group > button:hover {
+      background: #1362AB;
+    }
+  </style>
+</head>
+<body>

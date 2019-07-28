@@ -1,0 +1,10 @@
+.docker/db
+.docker/nginx/server.pem
+.docker/nginx/server-key.pem
+
+vendor
+storage/logs/*.log
+tests/reports
+
+composer.lock
+.env

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit cacheResult="false"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="./vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Unit Tests">
+          <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+      <env name="DB_DRIVER" value="pgsql"/>
+      <env name="DB_HOST" value="postgres-srv"/>
+      <env name="DB_PORT" value="5432"/>
+      <env name="DB_DATABASE" value="tests"/>
+      <env name="DB_USERNAME" value="postgres" />
+      <env name="DB_PASSWORD" value="docker" />
+      <env name="DB_CHARSET" value="utf8" />
+      <env name="DB_COLLATION" value="utf8_unicode_ci" />
+      <env name="DB_PREFIX" value="" />
+    </php>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+          <directory suffix=".php">./app/Auth</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="tests/reports/report" lowUpperBound="35" highLowerBound="70" />
+        <log type="coverage-clover" target="tests/reports/coverage.xml" />
+        <log type="testdox-html" target="tests/reports/testdox.html" />
+    </logging>
+</phpunit>
